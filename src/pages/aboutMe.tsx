@@ -1,13 +1,10 @@
 import React from 'react';
-import { Routes, Route, Link} from 'react-router-dom'
-
+import opalPhoto from '../images/Madeline+Opal.jpg';
+import "./aboutMe.css"
 
 function About() {
   return (
     <div className="About">
-        <nav>
-            <Link to= "/">Home</Link> | <Link to="/about">About Me</Link>
-        </nav>
       <h1>All about me!</h1>
       <div className="Bio">
         <h4>Bio</h4>
@@ -23,11 +20,12 @@ function About() {
         </p>
       </div>
 
-      <div className="Fun Facts">
+      <div className="FunFacts">
         <h4>Fun Facts!</h4>
         <p>Some fun facts about me are that I own a cat, I enjoy doing pottery, 
             and am currently watching Gilmore Girls!
         </p>
+        <img src={opalPhoto} className="opal" alt="Me and my cat at my birthday!" />
       </div>
     </div>
   );

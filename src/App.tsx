@@ -2,16 +2,24 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import About from './pages/aboutMe';
-import Home from './pages/home';
 import { Routes, Route, Link} from 'react-router-dom'
-
+import Madeline from './images/Madeline.jpg'
 
 function App() {
   return (
     <div className="App">
       <div className="Background">
+        <nav>
+            <Link to= "/">Home</Link> | <Link to="/about">About Me</Link>
+        </nav>
         <Routes>
-          <Route path="/" element={<Home />}></Route>
+          <Route path="/" element={
+            <>
+              <h1 className="Font">Hi, I'm Madeline Boss.</h1>
+              <img src={Madeline} className="Madeline" alt="Picture of me!" />
+            </>
+          }
+        />
           <Route path="/about" element={<About />}/>
         </Routes>
       </div>

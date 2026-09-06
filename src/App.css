@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Crafty+Girls&display=swap');
+
 .App {
   text-align: center;
+  background-image: url('./images/webBack2.jpeg');
+  background-size: cover;
+  min-height: 100vh;
 }
 
 .App-logo {
@@ -37,3 +42,13 @@
   }
 }
 
+.Font {
+  font-family: "Crafty Girls", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.Madeline {
+    width: 350px;
+    height: auto;
+}
