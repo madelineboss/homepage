@@ -2,8 +2,8 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import About from './pages/aboutMe';
-import { Routes, Route, Link} from 'react-router-dom'
-import Madeline from './images/Madeline.jpg'
+import { Routes, Route, Link} from 'react-router-dom';
+import Madeline from './images/Madeline.jpg';
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
             <Link to= "/">Home</Link> | <Link to="/about">About Me</Link>
         </nav>
         <Routes>
-          <Route path="/" element={
+          <Route path="/homepage" element={
             <>
               <h1 className="Font">Hi, I'm Madeline Boss.</h1>
               <img src={Madeline} className="Madeline" alt="Picture of me!" />
