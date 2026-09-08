@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <div className="Background">
         <nav>
-            <Link to= "/">Home</Link> | <Link to="/about">About Me</Link>
+            <Link to= "/homepage">Home</Link> | <Link to="/about">About Me</Link>
         </nav>
         <Routes>
           <Route path="/homepage" element={
